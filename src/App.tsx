@@ -1,19 +1,19 @@
-import { Routes, Route } from "react-router-dom";
-import { Home } from "../src/pages/index";
-import { About } from "../src/pages/about";
+import React from "react";
+import { useRoutes } from "react-router-dom";
+import routes from "./router/routes";
 
-import { Header } from "../src/components/Hader";
+const Default = React.lazy(() => import("./layout/default"));
+const Empty = React.lazy(() => import("./layout/empty"));
+
+const layouts = {
+  default: Default,
+  empty: Empty,
+};
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div>
-  );
+  let element = useRoutes(routes);
+
+  return element;
 }
 
 export default App;
