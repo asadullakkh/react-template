@@ -10,6 +10,11 @@ module.exports = {
       screens: {
         ...screens,
       },
+      colors: {
+        black: {
+          200: "#11142D",
+        },
+      },
     },
   },
   plugins: [],
