@@ -1,5 +1,3 @@
-import { Header } from "../components/Hader";
-
 interface Props {
   children: any;
 }
@@ -7,7 +5,6 @@ interface Props {
 const Layout = (prop: Props) => {
   return (
     <>
-      <Header />
       <main>{prop.children}</main>
     </>
   );
