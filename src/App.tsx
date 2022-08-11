@@ -13,9 +13,9 @@ const layouts = {
 console.log(Default, "default");
 
 function App() {
-  let element = useRoutes(routes);
+  let route = useRoutes(routes);
 
-  return element;
+  return route;
 }
 
 export default App;

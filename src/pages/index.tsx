@@ -1,6 +1,10 @@
 import Button from "@mui/material/Button";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="flex-center-center">
