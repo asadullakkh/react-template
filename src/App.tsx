@@ -10,6 +10,8 @@ const layouts = {
   empty: Empty,
 };
 
+console.log(Default, "default");
+
 function App() {
   let element = useRoutes(routes);
 
