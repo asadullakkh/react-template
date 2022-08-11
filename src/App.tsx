@@ -15,7 +15,7 @@ console.log(Default, "default");
 function App() {
   let route = useRoutes(routes);
 
-  return route;
+  return <Default>{route}</Default>;
 }
 
 export default App;
