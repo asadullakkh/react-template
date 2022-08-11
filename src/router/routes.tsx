@@ -5,13 +5,13 @@ const routes = [
   {
     path: "/",
     element: <Home />,
-    state: { title: "Home", layout: "default" },
+    meta: { title: "Home", layout: "default" },
   },
 
   {
     path: "*",
     element: <Error />,
-    state: { title: "Error", layout: "empty" },
+    meta: { title: "Error", layout: "empty" },
   },
 ];
 

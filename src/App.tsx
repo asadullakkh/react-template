@@ -1,21 +1,7 @@
-import React from "react";
-import { useRoutes } from "react-router-dom";
-import routes from "./router/routes";
-
-const Default = React.lazy(() => import("./layout/default"));
-const Empty = React.lazy(() => import("./layout/empty"));
-
-const layouts = {
-  default: Default,
-  empty: Empty,
-};
-
-console.log(Default, "default");
+import AppRouter from "./router/AppRouter";
 
 function App() {
-  let route = useRoutes(routes);
-
-  return <Default>{route}</Default>;
+  return <AppRouter />;
 }
 
 export default App;
