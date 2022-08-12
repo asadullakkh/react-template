@@ -1,11 +1,12 @@
 interface Props {
-  children: any;
+  children: React.ReactNode;
 }
 
-const Layout = (prop: Props) => {
+const Layout = (props: Props) => {
   return (
     <>
-      <main>{prop.children}</main>
+      <h1>It is Default Layout</h1>
+      <main>{props.children}</main>
     </>
   );
 };

@@ -1,7 +1,14 @@
 import { Home } from "../pages/index";
 import { Error } from "../pages/error";
+import React from "react";
 
-const routes = [
+type RouteTypes = Array<{
+  path: string;
+  element: React.ReactNode;
+  meta: { title: string; layout: string };
+}>;
+
+const routes: RouteTypes = [
   {
     path: "/",
     element: <Home />,

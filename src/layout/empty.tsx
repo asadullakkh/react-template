@@ -3,7 +3,12 @@ interface Props {
 }
 
 const Error = (props: Props) => {
-  return <div className="bg-[red]">{props.children}</div>;
+  return (
+    <div className="bg-[red]">
+      <h1>It is Error Layout</h1>
+      {props.children}
+    </div>
+  );
 };
 
 export default Error;
